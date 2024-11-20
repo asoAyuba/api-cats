@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'feline-service'
+    static_configs:
+      - targets: ['feline-service:4000']
